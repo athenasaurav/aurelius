@@ -37,7 +37,10 @@ Note : Sometimes this work on Linode : ```systemctl restart elasticsearch```
 ```curl -X GET "localhost:9200"```
 
 ## Git Clone Aurelius
-```git clone https://github.com/athenasaurav/aurelius.git```
+```
+git clone https://github.com/athenasaurav/aurelius.git
+cd aurelius
+```
 
 ## Install requirments
 ```pip3 install -r requirements.txt```
