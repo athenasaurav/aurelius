@@ -122,8 +122,11 @@ def get_query(retriever_limit: int = 10, reader_limit: int = 3):
     index_name = str(request.form.get('index_name').lower())
     q = str(request.form.get('q').lower())
     DOC_STORE = ElasticsearchDocumentStore(
-    host='localhost', username='', password='', index=index_name
-)
+        host='localhost', 
+        username='', 
+        password='', 
+        index=index_name
+        )
     RETRIEVER = ElasticsearchRetriever(DOC_STORE)
     READER = FARMReader(model_name_or_path='deepset/bert-base-cased-squad2',
                         context_window_size=1500,
