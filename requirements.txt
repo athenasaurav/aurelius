@@ -1,6 +1,8 @@
 fastapi
 farm-haystack
 uvicorn
+flask
+requests
 #torch
 #torchvision
 #torchaudio
