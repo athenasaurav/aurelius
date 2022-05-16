@@ -2,7 +2,7 @@ import os, sys
 import urllib.request
 from flask import Flask, request, render_template, redirect, url_for, flash, jsonify   
 from werkzeug.utils import secure_filename 
-from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
+from haystack.document_stores import ElasticsearchDocumentStore
 from haystack.retriever.dense import DensePassageRetriever
 from haystack.retriever.sparse import ElasticsearchRetriever
 from haystack.reader.farm import FARMReader
